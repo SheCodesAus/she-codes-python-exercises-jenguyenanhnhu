@@ -1,5 +1,0 @@
-km = input("How many kilometres?")
-m = float(km)*float(1000)
-cm = float(km)*float(100000)
-print(f"{km}km = {m}m")
-print(f"{km}km = {cm}cm")
