@@ -1,5 +1,6 @@
 
 # Python Lists start from 0 (index).
+
 characters = ["a", "b", "c"]
 print(characters[0])
 print(type(characters))
@@ -31,3 +32,33 @@ print(chilli_wishlist[-3])
 print(chilli_wishlist)
 chilli_wishlist.append("dig mat")
 print(chilli_wishlist.extend(['kong', 'tennis ball', 'crocodile toy']))
+chilli_wishlist.insert(1, 'peanut butter')
+print(chilli_wishlist)
+
+chilli_wishlist.insert(-2, 'snacks')
+chilli_wishlist.pop(2)
+chilli_wishlist.remove('igloo')
+print(chilli_wishlist)
+
+# Logic
+if "tennis ball" in chilli_wishlist:
+    print("Chilli would like a tennis ball!")
+else:
+    print("Chilli doesn't feel like playing fetch.")
+
+if "blueberries" in chilli_wishlist:
+    print("Chilli loves blueberries!")
+else:
+    chilli_wishlist.append("blueberries")
+    print(chilli_wishlist)
+    print("Chilli's wishlist now has blueberries.")
+
+chilli_wishlist = [
+    ['igloo'], #bed
+    ['donut toy','tennis ball', 'crocodile toy'], # toys
+    ['chicken', 'peanut butter'], # treats
+    ['cardboard box', 'kong', 'dig mat'] # activity based toys
+]
+
+print(chilli_wishlist[2])
+print(chilli_wishlist[2][1])
