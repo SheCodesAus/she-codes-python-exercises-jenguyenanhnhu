@@ -37,6 +37,7 @@ print(f"{mailing_list[1][0]}: {mailing_list[1][1]}")
 print(f"{mailing_list[2][0]}: {mailing_list[2][1]}")
 print(f"{mailing_list[3][0]}: {mailing_list[3][1]}")
 print(f"{mailing_list[4][0]}: {mailing_list[4][1]}")
+
 # Exercise 3
 name1 = input("Enter a name.")
 name2 = input("Enter a name.")
