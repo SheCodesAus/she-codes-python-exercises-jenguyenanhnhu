@@ -1,9 +1,11 @@
 # Exercise 1
+number = int(input("Enter a number: "))
 
+while number != "":
+    number = input("Enter a number: ")
 
 
 # Exercise 2
-
 
 
 
