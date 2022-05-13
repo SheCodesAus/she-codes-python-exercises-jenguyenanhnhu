@@ -18,11 +18,7 @@ def number(x):
 print(number(-96))
 
 # Exercise 3
-def list(a, n):
-    list = a/n
-    a = 4, 3, 2, 6
-    n = len(a)
-    return list
+
 
 
 # Exercise 4
