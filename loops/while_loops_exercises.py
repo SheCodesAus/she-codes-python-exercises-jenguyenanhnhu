@@ -1,12 +1,18 @@
 # Exercise 1
 number = int(input("Enter a number: "))
-
+all = []
 while number != "":
+    all.append(int(number))
     number = input("Enter a number: ")
-
+print(sum(all))
 
 # Exercise 2
-
+number2 = int(input("Enter a number: "))
+number3 = 1
+while number3 <= number2:
+    if number3 % 2 != 0:
+        print(number3)
+        number3 += 2
 
 
 # Exercise 3

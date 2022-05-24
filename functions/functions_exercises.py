@@ -18,7 +18,16 @@ def number(x):
 print(number(-96))
 
 # Exercise 3
-
-
+def mean(list):
+    mean = sum(list)/len(list)
+    return mean
+print(mean([4, 3, 2, 6]))
+print(mean([10, 5, 6]))
 
 # Exercise 4
+def total(price_per_unit, num_units):
+    total = price_per_unit*num_units
+    return total
+print(total(4.25, 3))
+print(total(3.79, 1))
+print(total(1.49, 7))
