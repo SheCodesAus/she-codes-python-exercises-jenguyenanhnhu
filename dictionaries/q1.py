@@ -16,11 +16,23 @@ quantity = {
     "Oranges": 2
 }
 
-# quantity = {
-#     "Baby Spinach": 2,
-#     "Hot Chocolate": 1,
-#     "Crackers": 4,
-#     "Bacon": 0,
-#     "Carrots": 8,
-#     "Oranges": 5
-# }
+for a in quantity:
+    total = quantity[a]*prices[a]
+for b in quantity:
+    print(f"{quantity[b]} {b} @ ${prices[b]} = ${round(total, 2)}")
+
+
+
+quantity2 = {
+    "Baby Spinach": 2,
+    "Hot Chocolate": 1,
+    "Crackers": 4,
+    "Bacon": 0,
+    "Carrots": 8,
+    "Oranges": 5
+}
+
+for c in quantity2:
+    total = quantity2[a]*prices[a]
+for d in quantity2:
+    print(f"{quantity2[b]} {b} @ ${prices[b]} = ${round(total, 2)}")

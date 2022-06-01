@@ -7,7 +7,6 @@ colour_counts = {
     "orange": 0,
 }
 
-
 colours = [
     "purple",
     "red",
@@ -21,6 +20,15 @@ colours = [
     "green"
 ]
 
+for colour in colour_counts:
+    colour_counts += 1
+
+
+    read_data = csv_file.read()
+    for data in colours:
+        list += 1
+        word_count = read_data.count(data)
+        print(f"{data}: {word_count}")
 # colours = [
 #     "orange",
 #     "purple",
