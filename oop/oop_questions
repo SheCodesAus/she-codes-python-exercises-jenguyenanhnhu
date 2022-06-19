@@ -1,0 +1,103 @@
+# Question 1 - Book
+class Book:
+
+    def __init__(self, title, author, pages, current_page, request_page):
+        self.title = title
+        self.author = author
+        self.pages = pages
+        self.current_page = current_page
+        self.request_page = request_page
+        self.bookmark = 1
+
+    def bookmark_page(self):
+        self.bookmark = self.request_page
+    
+    def turn_page(self):
+        self.current_page += str(1)
+        # is not turning pages properly, can't turn self.current_pages into int.
+
+    def __str__(self):
+        return f"Title: {self.title} | By: {self.author} | Pages: {self.pages}"
+
+    def __len__(self):
+        return self.pages
+    
+    def restart(self):
+        if int(self.current_page) == int(self.pages):
+            self.current_page = 1
+
+my_book = Book("A great book", "Jenny", "198", "198", "101")
+print(my_book)
+
+my_book.bookmark_page()
+# print(my_book.bookmark)
+# my_book.turn_page()
+# my_book.bookmark_page()
+# print(my_book.bookmark)
+print(f"I want to go to page {my_book.request_page}")
+print(f"I want to bookmark {my_book.bookmark}")
+my_book.restart()
+print(my_book.current_page)
+
+
+
+# Question 2 - Rectangle
+import math
+class Rectangle:
+
+    def __init__(self, width, height): 
+        self.width = width
+        self.height = height
+    
+    def area(self):
+        self.area = self.width*self.height
+
+    def perimeter(self):
+        self.perimeter = 2*(self.width + self.height)
+    
+    def pythagoras(self):
+        self.diagonal = math.sqrt(self.width**2 + self.height**2)
+
+    def square(self):
+        if self.width == self.height:
+            return "yes"
+
+values = Rectangle(3, 4)
+values.area()
+print(values.area)
+values.perimeter()
+print(values.perimeter)
+values.pythagoras()
+print(values.diagonal)
+values.square()
+
+
+# Question 3 - Vehicle
+class Vehicle:
+
+    def __init__(self, make, model, colour, seating, max_speed, fuel, distance):
+        self.make = make
+        self.model = model
+        self.colour = colour
+        self.seating = seating
+        self.max_speed = max_speed
+        self.fuel = fuel
+        self.distance = distance
+
+    def __str__(self):
+        return f"Make: {self.make}\nModel: {self. model}\nColour: {self.colour}\nSeating: self.seating\nMax Speed: {self.max_speed}"
+    
+    def rev_engine(self):
+        self.noise = "VRRRMMMM!"
+
+# Assume 1L every 4.5km.
+    def drive(self):
+        self.fuel_left = round(self.fuel - self.distance/4.5, 2)
+        
+
+vehicle = Vehicle("boat", "X8097", "lilac", "9", 40, 87.6, 98)
+print(vehicle)
+vehicle.rev_engine()
+print(vehicle.noise)
+vehicle.drive()
+print(f"Vehicle has {vehicle.fuel_left}L left of fuel.")

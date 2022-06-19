@@ -37,7 +37,7 @@ print(chilli_wishlist)
 
 chilli_wishlist.insert(-2, 'snacks')
 chilli_wishlist.pop(2)
-chilli_wishlist.remove('igloo')
+chilli_wishlist.remove('igloo') #removes one argument
 print(chilli_wishlist)
 
 # Logic
