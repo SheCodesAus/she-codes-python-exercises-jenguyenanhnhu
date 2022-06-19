@@ -26,12 +26,12 @@ print(string_without_vowels)
 # Part C
 winning_number = 2345
 
-guess = int(input("Guess the number:"))
+guess = input("Guess the number:")
 while guess != winning_number:
     for i in range(len(guess)):
         if i == winning_number[i]:
             print([i])
         else: 
             print('X')
-    guess = int(input("Guess the number: "))
+    guess = input("Guess the number: ")
 print(f"You got it! {guess} is correct.")
